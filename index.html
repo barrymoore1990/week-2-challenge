@@ -11,21 +11,23 @@
 
 <body>
   <!-- main logo / nav -->
+  <hr>
   <header>
     <nav>
       <h1>Barry Moore</h1>
       <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">My Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li class="main-button"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+  <hr>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+  <section>
+    <div class="hero-image">
+      <h2 class="subtitle">My First Portfolio</h2>
     </div>
   </section>
 
@@ -33,26 +35,46 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
+      <img class="profile-image" src="images/Barry.png" alt="">
+      <p class="about-me">
+        I'm Barry, a student developer. I've created this website to showcase my work, which currently consists of 
+        basically nothing whatsoever as I've only been studying it for 2 weeks! That should change soon with more projects coming up
+        over the next few months. 
+        <br>
+        <br>
+        Outside of the development world, I own a startup travel company, Touring Highlights, which is where I'll be using my coding
+        skills to develop a new booking system for the business. 
+        <br>
+        <br>
+        Contact me today to get help coding your problems, for overinflated prices.
+      </p>
+      
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
-      <p>
-        <ul>
-          <li>When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you</li>
-          <li>When one of the links in the navigation is clicked then the UI scrolls to the corresponding section</li>
-          <li>When viewing the section about your work then the section contains titled images of your applications</li>
-          <li>When presented with the your first application then that application's image should be larger in size than the others</li>
-          <li>When images of the applications are clicked then the user is taken to that deployed application</li>
-          <li>When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport</li>
-        </ul>
-      </p>
+      <div class="container">
+        <a class="box portfolio-1" href="https://github.com/barrymoore1990/challenge1.git"><span>Project 1</span></a>
+        <a class="box portfolio-2" href="https://github.com/barrymoore1990/week-2-challenge.git"><span>Project 2</span></a>
+        <a class="box portfolio-3" href="https://www.google.com"><span>Project 3</span></a>
+        <a class="box portfolio-4" href="https://www.google.com"><span>Project 4</span></a>
+        <a class="box portfolio-5" href="https://www.google.com"><span>Project 5</span></a>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <form action="/">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Enter your message:</label><br>
+        <textarea rows = "5" cols = "50" name = "description"></textarea><br>
+        <input type = "submit" name = "submit" value = "Submit"/>
+      </form>
     </section>
   </main>
 </body>
