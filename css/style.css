@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: #fdf9f8;
   --highlight-color: #ef9273;
+  --text-color: #0d0d0d;;
 }
 
 * {
@@ -13,7 +14,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color: var(--main-bg-color);
-  color: #0d0d0d;
+  color: var(--text-color);
 }
 
 h1,
@@ -34,6 +35,7 @@ hr {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 header {
